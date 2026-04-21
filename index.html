@@ -1,14 +1,129 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRO STREAM | 전문 방송 장비 셋팅 & 렌탈</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+<body class="dark-theme">
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo">PRO<span>STREAM</span></a>
+            <ul class="nav-list">
+                <li><a href="#services">서비스</a></li>
+                <li><a href="#portfolio">셋팅사례</a></li>
+                <li><a href="#rental">장비렌탈</a></li>
+                <li><a href="#contact" class="btn btn-primary">상담하기</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content container">
+                <h1 class="hero-title reveal">최고의 방송,<br>완벽한 <span>셋팅</span>으로부터</h1>
+                <p class="hero-description reveal">1인 미디어부터 전문 스튜디오까지, 당신의 방송 환경을 프로페셔널하게 최적화합니다.</p>
+                <div class="hero-btns reveal">
+                    <a href="#services" class="btn btn-neon">서비스 둘러보기</a>
+                    <a href="#contact" class="btn btn-outline">무료 견적 상담</a>
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services section container">
+            <h2 class="section-title reveal">OUR SERVICES</h2>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <i data-lucide="settings-2"></i>
+                    <h3>방송 환경 셋팅</h3>
+                    <p>OBS, XSplit 최적화 및 고사양 방송 PC 하드웨어 빌드 서비스를 제공합니다.</p>
+                </div>
+                <div class="service-card reveal">
+                    <i data-lucide="camera"></i>
+                    <h3>장비 패키지 렌탈</h3>
+                    <p>방송 컨셉에 맞는 카메라, 마이크, 조명 패키지를 합리적인 가격에 렌탈하세요.</p>
+                </div>
+                <div class="service-card reveal">
+                    <i data-lucide="layout"></i>
+                    <h3>스튜디오 대여</h3>
+                    <p>방음 및 최신 장비가 완비된 전문 방송 스튜디오 공간을 제공합니다.</p>
+                </div>
+                <div class="service-card reveal">
+                    <i data-lucide="palette"></i>
+                    <h3>방송 디자인</h3>
+                    <p>방송 오버레이, 배너, 로고 등 브랜드 이미지를 강화하는 디자인을 제작합니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio section">
+            <div class="container">
+                <h2 class="section-title reveal">SETUP CASES</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item reveal">
+                        <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1598550476439-6847785fce66?auto=format&fit=crop&q=80&w=800');"></div>
+                        <div class="portfolio-info">
+                            <h4>게임 방송 최적화</h4>
+                            <p>트위치 스트리머 A님 PC & 오디오 셋팅</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item reveal">
+                        <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&q=80&w=800');"></div>
+                        <div class="portfolio-info">
+                            <h4>음악 방송 스튜디오</h4>
+                            <p>유튜버 B님 방음 및 마이크 셋팅</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item reveal">
+                        <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&q=80&w=800');"></div>
+                        <div class="portfolio-info">
+                            <h4>토크 방송 고화질 캠</h4>
+                            <p>BJ C님 조명 및 카메라 앵글 최적화</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section container">
+            <div class="contact-box reveal">
+                <h2 class="section-title">START YOUR STREAM</h2>
+                <p>지금 바로 전문가와 상담하고 완벽한 방송 환경을 구축하세요.</p>
+                <div class="contact-actions">
+                    <a href="#" class="btn btn-primary btn-large">카카오톡 실시간 상담</a>
+                    <a href="tel:010-1234-5678" class="btn btn-outline btn-large">전화 문의하기</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">PRO<span>STREAM</span></div>
+                <p>&copy; 2026 PRO STREAM. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#"><i data-lucide="instagram"></i></a>
+                    <a href="#"><i data-lucide="youtube"></i></a>
+                    <a href="#"><i data-lucide="facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
